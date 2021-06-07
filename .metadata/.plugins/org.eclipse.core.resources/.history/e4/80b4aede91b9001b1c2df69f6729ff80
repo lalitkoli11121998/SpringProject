@@ -1,5 +1,0 @@
-package com.luv2code.spirngsecurity.demo.config;
-
-public class DemoSecurityConfig extends  {
-
-}

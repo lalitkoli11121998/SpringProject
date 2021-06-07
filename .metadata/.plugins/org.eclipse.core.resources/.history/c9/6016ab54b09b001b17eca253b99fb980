@@ -1,9 +1,0 @@
-package com.luv2cod.springdemo;
-
-public class Setterdemo {
-
-	public static void main(String[] args) {
-
-	}
-
-}

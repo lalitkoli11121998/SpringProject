@@ -1,6 +1,0 @@
-package com.luv2cod.springdemo;
-
-public class FortuneService {
-
-	  public String getFortune();
-}
