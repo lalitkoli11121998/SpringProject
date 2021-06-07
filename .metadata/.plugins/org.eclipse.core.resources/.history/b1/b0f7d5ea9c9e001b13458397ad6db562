@@ -1,0 +1,13 @@
+package com.luv2code.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class AnnotationsDemoApp {
+
+	public static void main(String[] args) {
+      //READ SPRING CONFIG FILE
+	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.luv2cod.springdemo;
+
+public class HappyFortuneService implements FortuneService{
+
+	@Override
+	public String getfortune() {
+		return "today is your lucky day";
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.luv2code.springdemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+//we can use as bean id or don't give any id because if we add only component annotation here then spring automatically 
+//known that it is a bean in which id is the classname with first letter should be small
+
+//@Component("thatSillyCoach")
+@Component
+public class TennisCoach implements Coach {
+
+	private FortuneService fortuneService;
+	
+//	@Autowired
+//    TennisCoach(FortuneService fortuneService){
+//	 this.fortuneService = fortuneService;	
+//	}
+    
+	TennisCoach(){	
+		System.out.println("spring called TENNIS CONSTRUCTOR");
+	}
+	
+	//create a setter method for injection the fortuneservice
+	
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("spring called setter method of teniscoach");
+		this.fortuneService = fortuneService;
+	}
+	
+	@Override
+	public String dailyworkout() {
+		return "practice your backend volley for ";
+	}
+
+	@Override
+	public String getdailyforune() {
+		return fortuneService.getfortune();
+	}
+
+}

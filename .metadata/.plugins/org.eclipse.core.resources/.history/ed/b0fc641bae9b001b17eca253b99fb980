@@ -1,0 +1,15 @@
+package com.luv2cod.springdemo;
+
+public class CricketCoach implements Coach {
+
+	@Override
+	public String getDailyfortune() {
+		return null;
+	}
+
+	@Override
+	public String getDailyworkout() {
+		return null;
+	}
+
+}

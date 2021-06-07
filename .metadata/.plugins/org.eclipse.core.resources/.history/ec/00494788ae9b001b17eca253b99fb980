@@ -1,0 +1,23 @@
+package com.luv2cod.springdemo;
+
+public class CricketCoach implements Coach {
+
+//	make a private field for the dependency 
+	private FortuneService fortuneService;
+	
+//	define a constructor for a dependency injection
+	public CricketCoach() {
+	
+	}
+	
+	@Override
+	public String getDailyfortune() {
+		return "practice fast bowlling for 15 minutes";
+	}
+
+	@Override
+	public String getDailyworkout() {
+		return ;
+	}
+
+}

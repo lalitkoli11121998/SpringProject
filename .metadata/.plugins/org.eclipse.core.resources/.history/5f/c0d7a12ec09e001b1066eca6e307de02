@@ -1,0 +1,11 @@
+package com.luv2code.springdemo;
+
+public class RandomService implements FortuneService {
+
+	@Override
+	public String getfortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

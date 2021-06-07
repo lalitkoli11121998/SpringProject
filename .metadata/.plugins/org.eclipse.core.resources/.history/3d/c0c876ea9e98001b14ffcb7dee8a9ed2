@@ -1,0 +1,24 @@
+package com.luv2cod.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class HelloSpringApp {
+
+	public static void main(String[] args) {
+		
+    //  load the spring configuration or crate the spring container
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+//		reterive the bean from spring container
+		Coach theCoach = context.getBean("myCoach", Coach.class);
+		
+//		call the method
+		String s = theCoach.getDailyworkout();
+		System.out.println(s);
+		
+		
+//		close the context
+		context.close();
+	}
+
+}

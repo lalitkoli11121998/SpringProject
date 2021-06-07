@@ -1,0 +1,17 @@
+package com.luv2code.springdemo;
+
+public class SwimCoach implements Coach {
+
+	@Override
+	public String dailyworkout() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getdailyforune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

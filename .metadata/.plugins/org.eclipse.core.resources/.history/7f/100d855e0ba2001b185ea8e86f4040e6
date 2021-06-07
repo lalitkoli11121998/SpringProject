@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  Hello world of spring!
+  
+  <br><br>
+  Student Name : ${parm.studentName}
+  <br><br>
+  
+  Student Name : ${message}
+</body>
+</html>

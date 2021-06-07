@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>student confirmation form
+  </title>
+ 
+</head>
+<body>
+  Hello world of spring!
+  
+  <br><br>
+  Student Name : ${parm.studentName}
+  <br><br>
+  
+  Student Name : ${message}
+ <!--  <img src="${pageContext.request.contextPath}/resources/images/spring-logo.png" />  -->
+</body>
+</html>

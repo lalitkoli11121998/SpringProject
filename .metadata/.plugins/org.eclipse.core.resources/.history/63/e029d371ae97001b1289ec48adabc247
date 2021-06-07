@@ -1,0 +1,11 @@
+package com.luv2cod.springdemo;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+        Coach c = new BaseBallCoch();
+        c.getDailyworkout();
+        System.out.print(c.getDailyworkout());
+	}
+
+}

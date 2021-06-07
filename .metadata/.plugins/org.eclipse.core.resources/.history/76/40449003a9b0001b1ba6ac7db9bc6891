@@ -1,0 +1,46 @@
+package com.luv2code.springdemo.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.luv2code.springdemo.entity.Customer;
+
+@Repository //THIS ANNOATION ALSO WORK SAME AS @COMPONENT ANOTAION
+public class CustomerDAOimp implements CustomerDAO {
+
+	//need to add dependency injection (session factory)
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	
+	
+	@Override
+//	@Transactional //spring automatically transction start end or commit kregi
+	public List<Customer> getCustomers() {
+	   
+		//get query hubernate session
+		Session session = sessionFactory.getCurrentSession();
+	
+		//create the query and execute the query
+		List<Customer> thecustomers = session.createQuery("from Customer", Customer.class).getResultList();
+
+		//return the result
+		return thecustomers;
+	}
+
+
+
+	@Override
+	public void saveCustomer(Customer thecustomer) {
+		
+		Session session = sessionFactory.getCurrentSession();
+		session.save(thecustomer);
+	}
+
+}

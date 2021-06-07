@@ -1,0 +1,46 @@
+package com.luv2code.springdemo.mvc;
+
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+public class Customer {
+  
+	private String firstname;
+	
+	@NotNull(message ="is required") //agr ye null hota h then validation false hogi or message print hoga)
+	@Size(min=1, max =199, message = "character out of range")
+	private String lastname;
+	
+	@Min(value=0, message ="must be greater then equal to zero")
+	@Max(value=10, message "must be less then equal to 10")
+	private int freePasses;
+
+	public Customer() {
+		
+	}
+	
+	public int getFreePasses() {
+		return freePasses;
+	}
+
+	public void setFreePasses(int freePasses) {
+		this.freePasses = freePasses;
+	}
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+	public String getLastname() {
+		return lastname;
+	}
+
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+}

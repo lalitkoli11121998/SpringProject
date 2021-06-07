@@ -1,0 +1,16 @@
+
+<!-- for using the springform we have to add the below use -->
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Student Register form</title>
+  </head>
+  <body>
+     <!-- the model attribute should be same as the model which we have given in the controller -->
+      <form:form action = "processForm" modelAttribute = "student">
+      
+      </form:form>
+  </body>
+</html>

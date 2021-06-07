@@ -1,0 +1,25 @@
+
+<!-- for using the springform we have to add the below use -->
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Student Register form</title>
+  </head>
+  <body>
+     <!-- the model attribute should be same as the model which we have given in the controller -->
+      <form:form action = "processForm" modelAttribute = "student">
+           <!-- fistname is the property of the student 
+           class and spring behind the scene read the path name as "setFirstname" -->
+           
+            student first name : <form:input path="firstname"/>
+            <br><br>
+            
+            student last name : <form:input path="lastname"/>
+            <br><br>
+            <input type ="submit"/>
+            <!-- whenever we submit the form spring will call student.setFirstname() and student.setLastname() -->
+      </form:form>
+  </body>
+</html>

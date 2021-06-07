@@ -1,0 +1,11 @@
+package com.luv2code.springdemo;
+
+public class TennisCoach implements Coach {
+
+	@Override
+	public String dailyworkout() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

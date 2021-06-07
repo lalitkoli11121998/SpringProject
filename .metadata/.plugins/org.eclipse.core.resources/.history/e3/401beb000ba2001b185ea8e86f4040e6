@@ -1,0 +1,12 @@
+
+<html>
+<head>
+</head>
+<body>
+  Hello world of spring!
+  
+  <br><br>
+  
+  Student Name : ${parms.studentName}
+</body>
+</html>

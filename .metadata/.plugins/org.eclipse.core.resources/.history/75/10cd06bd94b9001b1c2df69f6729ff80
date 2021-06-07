@@ -1,0 +1,9 @@
+package com.luv2code.spirngsecurity.demo.config;
+
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+
+//it will initializing the security initializer
+public class SecurityWebApplicationInitializer
+                      extends AbstractSecurityWebApplicationInitializer {
+
+}

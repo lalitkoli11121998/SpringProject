@@ -1,0 +1,17 @@
+package com.luv2code.springdemo.mvc.validation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+import javax.validation.Constraint;
+
+//validatedBy = CourseCodeConstraintValidators.class this class will validate
+//the annotation we write the business logic here
+//@Target({ElementType.METHOD, ElementType.FIELD}) MEANS THIS VALIDTION WILL WORK ON FIELD AND METHOD
+@Constraint(validatedBy = CourseCodeConstraintValidator.class)
+@Target({ElementType.METHOD, ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface CourseCode {
+
+}

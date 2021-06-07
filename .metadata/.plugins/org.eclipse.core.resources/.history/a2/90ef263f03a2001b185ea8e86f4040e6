@@ -1,0 +1,21 @@
+package com.luv2code.springdemo.mvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloWorldController {
+
+	//initial controller method to show the form
+	@RequestMapping("/showForm")
+	public String showForm() {
+//		the return string is the name of the jsp html
+	   return "helloworld-form";	
+	}
+	
+	//need a controller  method to process the html form
+	@RequestMapping("/processForm")
+	public String precesform() {
+		   return "helloworld-form";	
+	}
+}

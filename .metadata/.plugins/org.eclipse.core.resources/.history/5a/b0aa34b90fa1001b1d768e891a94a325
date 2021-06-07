@@ -1,0 +1,12 @@
+package com.luv2code.springdemo.mvc;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HmeController {
+
+	@RequestMapping("/")
+	public String showpage() {
+		return "main-menu";
+	}
+}

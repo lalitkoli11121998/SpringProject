@@ -1,0 +1,10 @@
+package com.luv2code.springdemo;
+
+public class TennisCoach implements Coach {
+
+	@Override
+	public String dailyworkout() {
+		return "practice your backend volley";
+	}
+
+}

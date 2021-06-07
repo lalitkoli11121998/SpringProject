@@ -1,0 +1,16 @@
+
+<!-- for using the springform we have to add the below use -->
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Login form</title>
+  </head>
+  <body>
+     <!-- the model attribute should be same as the model which we have given in the controller -->
+      <form:form action = "${pageContaxt.request.contextPath}/authenticateTheUser" modelAttribute = "customer">
+                 
+      </form:form>
+  </body>
+</html>
